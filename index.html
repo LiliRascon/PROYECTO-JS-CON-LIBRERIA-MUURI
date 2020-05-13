@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Monoton&family=Sacramento&display=swap"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e84dd5efc5.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+   <!-- font-family: 'Sacramento', cursive;
+   font-family: 'Monoton', cursive;
+   font-family: 'Fredericka the Great', cursive; -->
+   <title>PORTAFOLIO LILIANA RASCÓN</title>
+</head>
+
+<body>
+   <div class="contenedor">
+      <header>
+         <div class="logo">
+            <h1>LILIANA RASCÓN ESTRADA</h1>
+            <p>Front End Developer</p>
+         </div>
+         <form action="">
+            <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+         </form>
+         <div class="categorias" id="categorias">
+            <a href="#" class="activo">TODOS</a>
+            <a href="#">NATURALEZA</a>
+            <a href="#">CIUDADES</a>
+            <a href="#">PERSONAS</a>
+            <a href="#">ANIMALES</a>
+
+         </div>
+      </header>
+      <section class="grid" id="grid">
+         <div class="item" 
+              data-categoria="ciudades" 
+              data-etiquetas="ciudades calles Paris"
+              data-descripcion="1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/ciudad1.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" 
+              data-categoria="personas"
+              data-etiquetas="personas actores george clooney hombre"
+              data-descripcion="2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/persona1.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="ciudades"
+            data-etiquetas="dubai luces lujo isla mar"
+            data-descripcion="3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/ciudad2.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="animales" data-etiquetas="animales pantera negra naturaleza felino"
+            data-descripcion="4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/animal1.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="personas" 
+            data-etiquetas="megan fox mujer actriz morena mujeres actriz"
+            data-descripcion="5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/persona3.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="naturaleza" data-etiquetas="paisajes montaña mar arena aterdecer cielo"
+            data-descripcion="6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/paisaje1.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="animales" 
+         data-etiquetas="animales caballos cafes tierra"
+            data-descripcion="7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/animal2.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="naturaleza" data-etiquetas="paisajes montaña rocosa pinos aterdecer lago"
+            data-descripcion="8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/paisaje2.jpeg" alt="">
+            </div>
+         </div>
+         <div class="item" data-categoria="personas" data-etiquetas="personas mujer mujeres Emma Stone rubia"
+            data-descripcion="9. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic itaque tenetur tempore.">
+            <div class="item-contenido">
+               <img src="img/persona2.jpeg" alt="">
+            </div>
+         </div>
+
+      </section>
+
+      <section class="overlay" id="overlay">
+         <div class="contenedor-img">
+            <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+            <img src="" alt="">
+         </div>
+         <p class="descripcion"></p> 
+      </section>
+
+      <footer>
+         <div class="redes-sociales">
+            <div class="contenedor-icono">
+               <a href="https://twitter.com/rascon_lili" target="_blank" class="twitter">
+                  <i class="fab fa-twitter"></i>
+               </a>
+            </div>
+            <div class="contenedor-icono">
+               <a href="https://www.instagram.com/lilianarasconestrada/?hl=es " target="_blank" class="instagram">
+                  <i class="fab fa-instagram"></i>
+               </a>
+            </div>
+            <div class="contenedor-icono">
+               <a href="https://www.facebook.com/liliana.rascon.58?ref=bookmarks" target="_blank" class="facebook">
+                  <i class="fab fa-facebook"></i>
+               </a>
+            </div>
+         </div>
+
+         <div class="creado-por">
+            <p>Sitio creado por <a href="#">Liliana Rascón</a> - <a href="https://github.com/LiliRascon?tab=repositories">Git Hub Lili Rascón</a></p>
+            
+         </div>
+      </footer>
+
+
+
+   </div>
+   <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+   <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+   <script src="main.js"></script>
+</body>
+
+</html>
